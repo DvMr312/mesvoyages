@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -11,7 +10,8 @@ use Symfony\Component\Routing\Annotation\Route;
  *
  * @author Utilisateur 1
  */
-class AccueilController extends AbstractController  {
+class AccueilController extends AbstractController{
+    
     /**
      * @Route("/", name="accueil")
      * @return Response
