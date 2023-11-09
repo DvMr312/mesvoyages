@@ -74,4 +74,5 @@ public function findAllOrderBy($champ, $ordre): array{
                 ->getResult();                   
         }
     }
+    
 }
