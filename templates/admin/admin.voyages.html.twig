@@ -2,6 +2,11 @@
 
 {% block body %}
 
+    <p class="text-end">
+        <a href="{{ path('admin.voyage.ajout') }}" class="btn btn-primary">
+            Ajouter une nouvelle visite
+        </a>
+    </p>  
     <table class="table table-striped">
         <thead>
             <tr>
@@ -34,7 +39,7 @@
                         {{ visite.datecreationstring }}
                     </td>
                     <td>
-                        <a href="{{ path('admin.voyage.edit', {id:visite.id}) }}" class="btn btn-secondary">Editer</a>
+                        <a href="{{ path('admin.voyage.edit', {visite:visite.id}) }}" class="btn btn-secondary">Editer</a>
                         <a href="{{ path('admin.voyage.suppr',{id:visite.id}) }}" class="btn btn-danger" onclick="return confirm('Etes-vous sur de vouloir supprimer {{ visite.ville }} ?')">Supprimer</a>
                     </td>
                 </tr>
