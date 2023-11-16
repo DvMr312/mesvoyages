@@ -53,12 +53,14 @@ class AdminVoyagesController extends AbstractController {
    }
    
    /**
-     * @Route("/admin/edit/{visite}", name="admin.voyage.edit")
+     * @Route("/admin/edit/{id}", name="admin.voyage.edit")
      * @param Visite $visite
+    *  @param int $id
      * @param Request $request
      * @return Response
      */
-    public function edit(Visite $visite, Request $request): Response{
+    public function edit(int $id, Request $request): Response{
+        $visite = $this->repository->find($id);
         $formVisite = $this->createForm(VisiteType::class, $visite);
 
         $formVisite->handleRequest($request);
