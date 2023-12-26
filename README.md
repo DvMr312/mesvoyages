@@ -1,0 +1,13 @@
+Rappel de la mission
+Vous intégrez l’équipe de développeurs de votre client qui est chargée des applications métiers. En pleine mutation numérique, 
+le client déploie de nouvelles stratégies de marketing et de communication pour augmenter sa productivité.
+Votre mission consiste à développer un site web à l’aide d’un cadre applicatif (framework) qui sépare les 
+responsabilités de la logique métier et de présentation.
+
+Le but est de créer un site avec une partie front et une partie back présentent mes voyages aux internautes. 
+La partie front servira à afficher des informations sur chaque visite d'une ville (nom de la ville, du pays, t° min et max, note, 
+description, photo et liste des environnements). Une partie "contact" permettra aux internautes de laisser un message. 
+La partie back servira à gérer les voyages (ajout, modification, suppression d'une visite, ajout et suppression d'un environnement)
+Le site est développé avec Symfony sur NetBeans en utilisant, entre autres, les outils Bootstrap (pour la présentation), 
+Twig (pour les templates),Doctrine pour gérer la bdd (pour l'ORM) et différents bundles (pour la gestion des photos 
+et l'envoi de mails).
