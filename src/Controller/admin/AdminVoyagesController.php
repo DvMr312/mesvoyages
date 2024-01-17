@@ -39,7 +39,8 @@ class AdminVoyagesController extends AbstractController {
         return $this->render("admin/admin.voyages.html.twig", [
             'visites' => $visites
         ]);
-    }      
+    }
+    
     /**
      * @Route("/admin/suppr/{id}", name="admin.voyage.suppr")
      * @param int $id
