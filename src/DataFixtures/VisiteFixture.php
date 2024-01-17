@@ -24,7 +24,7 @@ class VisiteFixture extends Fixture
                     ->setNote($faker->numberBetween(0, 20))
                     ->setAvis($faker->sentences(4, true));
             
-            //enregistrement de l'objet
+            //enregistrement de l'objet dans la bdd avec persist
             $manager->persist($visite);
         }
 
