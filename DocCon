@@ -10,4 +10,4 @@ La partie back servira à gérer les voyages (ajout, modification, suppression d
 une partie admin avec authentifications devra aussi etre présente.
 
 Le site est développé avec Symfony sur NetBeans en utilisant, entre autres, les outils Bootstrap (pour la présentation), 
-Twig (pour les templates), Doctrine pour gérer la bdd (pour l'ORM) et différents bundles (pour la gestion des photos et l'envoi de mails).
+Twig (pour les templates), Doctrine pour gérer la bdd (pour l'ORM) et différents bundles (pour la gestion des photos).
