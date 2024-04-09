@@ -1,13 +1,33 @@
-Votre mission consiste à développer un site web à l’aide d’un cadre applicatif (framework) 
-qui sépare les responsabilités de la logique métier et de présentation.
-Le but est de créer un site avec une partie front et une partie back présentent vos voyages aux internautes. 
-La partie front servira à afficher des informations sur chaque visite d'une ville (nom de la ville, du pays, t° min et max, note, 
-description, date, photo et liste des environnements). 
+Vous etes passioné de voyage et le but est de créer un site avec une partie front et une partie back présentent vos voyages.
 
-Une partie "contact" permettra aux internautes de laisser un message. 
+La partie front devra contenir une rubrique Accueil, Voyages et Contact. 
 
-La partie back servira à gérer les voyages (ajout, modification, suppression d'une visite, ajout et suppression d'un environnement) pour cela
-une partie admin avec authentifications devra aussi etre présente.
+Dans la partie Accueil vous mettrez une introduction de votre choix, avec les deux derniers voyages effectués avec les caractéristiques suivant : 
+  - Informations sur les températures minimales et maximales.
+  - Date de la visite
+  - Nom de la ville et du pays
+  - Une photo représentatif du lieu de la visite.
+  - Liste des environnements de la ville. 
+  - Note sur 20 
+Dans la partie Voyages une liste de tous les voyages effectués sera attendu, chaque voyage devra comporter le nom de la ville et du pays correspondant, une note d’évaluation sur 20 et la date de la visite. Avec la possibilité de filtrer par nom sur les champs ville et pays, et de trier par ordre croissant et décroissant sur (Ville, Pays, Note, Date).
 
-Le site est développé avec Symfony sur NetBeans en utilisant, entre autres, les outils Bootstrap (pour la présentation), 
-Twig (pour les templates), Doctrine pour gérer la bdd (pour l'ORM) et différents bundles (pour la gestion des photos).
+En cliquant sur le nom d’une ville on devra atterrir sur une nouvelle page et obtenir les informations suivantes sur cette destination :
+  - Informations sur les températures minimales et maximales.
+  - Un avis sur la visite.
+  - Date de la visite
+  - Nom de la ville et du pays
+  - Une photo représentatif du lieu de la visite.
+  - Liste des environnements de la ville et note sur 20.
+
+Vous devrez intégré également une rubrique contact ou les internautes aurons à leurs dispositions un formulaire de contact leurs permettant de renseigner leurs noms leurs mail ainsi que leurs messages pour poser des questions, rapporter des erreurs etc.
+La partie back servira à gérer les voyages avec des fonctions permettant d’ajouter de modifier et de supprimer une destination, l’ajout et la suppression d'un environnement sera nécessaire.
+Pour y accéder une page admin devra être créer avec authentifications. 
+
+- Le site doit être développé avec Symfony.
+
+- Le SGBD de votre choix (MongoDB,MySQL,PostgreSQL).
+
+Des outils Bootstrap pour la présentation ainsi que Twig pour les templates et doctrine pour gérer les données entre Symfony et la  BDD.
+
+Et différents bundles pour la gestion des photos sont requis.
+
